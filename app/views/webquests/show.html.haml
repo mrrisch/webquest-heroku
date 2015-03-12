@@ -1,0 +1,24 @@
+#pin_show.row
+	.col-md-8.col-md-offset-2
+		.panel.panel-default
+			.panel-heading.pin_image
+				= image_tag @webquest.image.url
+			.panel-body
+				%h1= @webquest.name
+				%p.description= @webquest.beschreibung
+			- if @webquest.anhang?	
+				.panel-body
+					%h3 Anhang
+					%p.description= link_to "Aufgabe herunterladen",  @webquest.anhang.url(:original, false)
+			.panel-footer
+				.row
+					.col-md-6
+						%p.user
+						Erstellt von
+						=@webquest.lehrer.vorname 
+						=@webquest.lehrer.name 
+					.col-md-6
+						.btn-group.pull-right
+							- if lehrer_signed_in?
+								= link_to "Aktualisieren", edit_webquest_path, class: "btn btn-default"
+								= link_to "Löschen", webquest_path, method: :delete, data: {confirm: "Sind Sie sicher?"}, class: "btn btn-default"
