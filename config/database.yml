@@ -20,8 +20,8 @@ test:
 
 production:
   adapter: postgresql
-  database: mission
-  username: username
-  password: password
-  host: localhost
+  database: d364050bm6b5ko
+  username: zmmjyokutswxps
+  password: YrD8g_xB_CdZ35HjKfzdMWlVB8
+  host: ec2-23-21-187-45.compute-1.amazonaws.com
 
