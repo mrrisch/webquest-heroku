@@ -33639,3 +33639,254 @@ Processing by WebquestsController#index as HTML
   [1m[35mLehrer Load (0.2ms)[0m  SELECT  "lehrers".* FROM "lehrers"  WHERE "lehrers"."id" = 1  ORDER BY "lehrers"."id" ASC LIMIT 1
   [1m[36mFach Load (0.1ms)[0m  [1mSELECT "faches".* FROM "faches"[0m
 Completed 200 OK in 139ms (Views: 137.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-13 11:42:03 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WebquestsController#index as HTML
+  [1m[35mWebquest Load (0.7ms)[0m  SELECT "webquests".* FROM "webquests"   ORDER BY created_at DESC
+  [1m[36mLehrer Load (0.6ms)[0m  [1mSELECT  "lehrers".* FROM "lehrers"  WHERE "lehrers"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "lehrers".* FROM "lehrers"  WHERE "lehrers"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "lehrers".* FROM "lehrers"  WHERE "lehrers"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "lehrers".* FROM "lehrers"  WHERE "lehrers"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "lehrers".* FROM "lehrers"  WHERE "lehrers"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "lehrers".* FROM "lehrers"  WHERE "lehrers"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered webquests/index.html.haml within layouts/application (72.9ms)
+  [1m[36mFach Load (0.4ms)[0m  [1mSELECT "faches".* FROM "faches"[0m
+Completed 200 OK in 418ms (Views: 399.2ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-13 11:42:03 +0100
+Processing by WebquestsController#index as HTML
+  [1m[35mWebquest Load (0.3ms)[0m  SELECT "webquests".* FROM "webquests"   ORDER BY created_at DESC
+  [1m[36mLehrer Load (0.1ms)[0m  [1mSELECT  "lehrers".* FROM "lehrers"  WHERE "lehrers"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "lehrers".* FROM "lehrers"  WHERE "lehrers"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "lehrers".* FROM "lehrers"  WHERE "lehrers"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "lehrers".* FROM "lehrers"  WHERE "lehrers"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "lehrers".* FROM "lehrers"  WHERE "lehrers"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "lehrers".* FROM "lehrers"  WHERE "lehrers"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered webquests/index.html.haml within layouts/application (13.6ms)
+  [1m[36mFach Load (0.1ms)[0m  [1mSELECT "faches".* FROM "faches"[0m
+Completed 200 OK in 130ms (Views: 129.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/webquests.css?body=1" for 127.0.0.1 at 2015-03-13 11:42:03 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-13 11:42:03 +0100
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2015-03-13 11:42:03 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-13 11:42:03 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-13 11:42:03 +0100
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2015-03-13 11:42:03 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-03-13 11:42:03 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-03-13 11:42:03 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-03-13 11:42:03 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-03-13 11:42:03 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-03-13 11:42:03 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-03-13 11:42:03 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-03-13 11:42:03 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-03-13 11:42:03 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-03-13 11:42:03 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-03-13 11:42:03 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-13 11:42:03 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-03-13 11:42:03 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-03-13 11:42:03 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-03-13 11:42:03 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-13 11:42:03 +0100
+
+
+Started GET "/assets/webquests.js?body=1" for 127.0.0.1 at 2015-03-13 11:42:03 +0100
+
+
+Started GET "/webquests/8" for 127.0.0.1 at 2015-03-13 11:42:10 +0100
+Processing by WebquestsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mWebquest Load (0.3ms)[0m  SELECT  "webquests".* FROM "webquests"  WHERE "webquests"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36mLehrer Load (0.1ms)[0m  [1mSELECT  "lehrers".* FROM "lehrers"  WHERE "lehrers"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered webquests/show.html.haml within layouts/application (14.3ms)
+  [1m[35mFach Load (0.2ms)[0m  SELECT "faches".* FROM "faches"
+Completed 200 OK in 183ms (Views: 181.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2015-03-13 11:42:10 +0100
+
+
+Started GET "/assets/webquests.css?body=1" for 127.0.0.1 at 2015-03-13 11:42:10 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-13 11:42:10 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-03-13 11:42:10 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-13 11:42:10 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-03-13 11:42:10 +0100
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2015-03-13 11:42:10 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-03-13 11:42:10 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-03-13 11:42:10 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-03-13 11:42:10 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-03-13 11:42:10 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-03-13 11:42:10 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-03-13 11:42:10 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-03-13 11:42:10 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-03-13 11:42:10 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-03-13 11:42:10 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-03-13 11:42:10 +0100
+
+
+Started GET "/assets/webquests.js?body=1" for 127.0.0.1 at 2015-03-13 11:42:10 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-03-13 11:42:10 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-13 11:42:10 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-13 11:42:10 +0100
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2015-03-13 11:42:14 +0100
+
+
+Started GET "/assets/webquests.css?body=1" for 127.0.0.1 at 2015-03-13 11:42:14 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-13 11:42:14 +0100
+Processing by WebquestsController#index as HTML
+  [1m[36mWebquest Load (0.4ms)[0m  [1mSELECT "webquests".* FROM "webquests"   ORDER BY created_at DESC[0m
+  [1m[35mLehrer Load (0.2ms)[0m  SELECT  "lehrers".* FROM "lehrers"  WHERE "lehrers"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "lehrers".* FROM "lehrers"  WHERE "lehrers"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "lehrers".* FROM "lehrers"  WHERE "lehrers"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "lehrers".* FROM "lehrers"  WHERE "lehrers"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "lehrers".* FROM "lehrers"  WHERE "lehrers"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "lehrers".* FROM "lehrers"  WHERE "lehrers"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered webquests/index.html.haml within layouts/application (21.1ms)
+  [1m[35mFach Load (0.2ms)[0m  SELECT "faches".* FROM "faches"
+Completed 200 OK in 185ms (Views: 183.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/webquests.css?body=1" for 127.0.0.1 at 2015-03-13 11:42:14 +0100
+
+
+Started GET "/assets/masonry/transitions.css?body=1" for 127.0.0.1 at 2015-03-13 11:42:14 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-13 11:42:14 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-03-13 11:42:14 +0100
+
+
+Started GET "/assets/masonry/jquery.masonry.js?body=1" for 127.0.0.1 at 2015-03-13 11:42:14 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-03-13 11:42:14 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-13 11:42:14 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-03-13 11:42:14 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-03-13 11:42:14 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-03-13 11:42:14 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-03-13 11:42:14 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-03-13 11:42:14 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-03-13 11:42:14 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-03-13 11:42:14 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-03-13 11:42:14 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-03-13 11:42:14 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-03-13 11:42:14 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-03-13 11:42:14 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-13 11:42:14 +0100
+
+
+Started GET "/assets/webquests.js?body=1" for 127.0.0.1 at 2015-03-13 11:42:14 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-13 11:42:14 +0100
