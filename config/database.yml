@@ -15,22 +15,12 @@ default: &default
 
 
 development:
-  adapter: postgresql
-  database: d364050bm6b5ko
-  username: zmmjyokutswxps
-  password: YrD8g_xB_CdZ35HjKfzdMWlVB8
-  host: ec2-23-21-187-45.compute-1.amazonaws.com
-  pool: 5
-  timeout: 5000
+  adapter: sqlite3
+  database: database.db
 
 test:
-  adapter: postgresql
-  database: d364050bm6b5ko
-  username: zmmjyokutswxps
-  password: YrD8g_xB_CdZ35HjKfzdMWlVB8
-  host: ec2-23-21-187-45.compute-1.amazonaws.com
-  pool: 5
-  timeout: 5000
+  adapter: sqlite3
+  database: database.db
 
 production:
   adapter: postgresql
