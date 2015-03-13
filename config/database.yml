@@ -8,6 +8,7 @@ default: &default
   adapter: postgresql
   pool: 5
   timeout: 5000
+  database: d364050bm6b5ko
   username: zmmjyokutswxps
   password: YrD8g_xB_CdZ35HjKfzdMWlVB8
   host: ec2-23-21-187-45.compute-1.amazonaws.com
@@ -16,17 +17,26 @@ default: &default
 development:
   adapter: postgresql
   database: d364050bm6b5ko
+  username: zmmjyokutswxps
+  password: YrD8g_xB_CdZ35HjKfzdMWlVB8
+  host: ec2-23-21-187-45.compute-1.amazonaws.com
   pool: 5
   timeout: 5000
 
 test:
   adapter: postgresql
   database: d364050bm6b5ko
+  username: zmmjyokutswxps
+  password: YrD8g_xB_CdZ35HjKfzdMWlVB8
+  host: ec2-23-21-187-45.compute-1.amazonaws.com
   pool: 5
   timeout: 5000
 
 production:
   adapter: postgresql
   database: d364050bm6b5ko
+  username: zmmjyokutswxps
+  password: YrD8g_xB_CdZ35HjKfzdMWlVB8
+  host: ec2-23-21-187-45.compute-1.amazonaws.com
   pool: 5
   timeout: 5000
